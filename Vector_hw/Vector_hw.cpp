@@ -95,7 +95,7 @@ int main()
 				try {
 					auto iteri = I.cbegin();
 					I.emplace(iteri + (index - 1), item);
-					//I.erase(iteri + index);
+					I.erase(I.begin() + index);
 				}
 				catch (runtime_error e)
 				{
@@ -155,7 +155,7 @@ int main()
 				try {
 					auto iterd = D.cbegin();
 					D.emplace(iterd + (index - 1), item);
-					//I.erase(iterd + index);
+					D.erase(D.cbegin() + index);
 				}
 				catch (runtime_error e)
 				{
@@ -204,7 +204,7 @@ int main()
 				try {
 					auto iters = S.cbegin();
 					S.emplace(iters + (index - 1), item);
-					//I.erase(iters + index);
+					S.erase(S.cbegin() + index);
 				}
 				catch (runtime_error e)
 				{
